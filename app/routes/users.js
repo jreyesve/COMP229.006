@@ -7,14 +7,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/profile', function(req, res, next) {
-  res.render('index', { title: 'Profile' });
+  res.render('home', { title: 'Profile' });
 });
 
 router.get('/profile/julio', function(req, res, next) {
-  res.render('index', { title: 'Profile: Julio' });
+  res.render('home', { title: 'Profile: Julio' });
 });
 
-router.get('/profile/john', function(req, res, next) {
-  res.render('index', { title: 'Profile: John' });
+router.get('/profile/jhon', function(req, res, next) {
+  res.render('home', { title: 'Profile: John' });
 });
 module.exports = router;

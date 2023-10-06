@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
+//app.use('/', (req,res)=>{res.render('home', { title: 'HOME PAGE YUSS' })})
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -36,7 +37,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', { title: 'Error Page' });
 });
 
 module.exports = app;
