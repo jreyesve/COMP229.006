@@ -50,10 +50,44 @@
     <p>As well, if you require especilized IT consulting services for your company, you can reach me on bussines hours
       Mon-Fri 9:00am - 6:00pm using the contact information below.
     </p>
-    <ul>
-      <li><b>Phone:</b> +(1) 437 288 7188</li>
-      <li><b>Email:</b> julio_cesar.rv@hotmail.com</li>
-    </ul>
-    <!--Footer here-->
+
+    <button class="tablink" onclick="openPage('General', this, 'red')" id="defaultOpen">Phone</button>
+    <button class="tablink" onclick="openPage('Building', this, 'green')" >Email</button>
+    <button class="tablink" onclick="openPage('Exterior', this, 'blue')">linkedin</button>
+    <div id="General" class="tabcontent">
+            <dl>
+            <dt><strong> +(1) 437 288 7188</strong></dt>
+            </dl>
+    </div>
+
+    <div id="Building" class="tabcontent">
+             <dl>
+                <dt><strong>julio_cesar.rv@hotmail.com</strong></dt>
+            </dl>    
+        </div>
+
+        <div id="Exterior" class="tabcontent">
+            <dl>
+                <dt><strong>https://www.linkedin.com/in/julio-r-4a708599/</strong></dt>
+            </dl>    
+          </div>
+    <script>
+      //Tab Functionality ---------------------------------------------------
+      function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      }
+  
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
   </main>
 </div>
