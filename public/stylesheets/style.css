@@ -153,7 +153,7 @@ p,dd {
     text-align: justify;
     text-justify: inter-word;
 }
-.RealStateWords{
+.Mission{
     font-size: medium; color: #5C7FA3;
     font-weight: bold;}
 
@@ -356,9 +356,9 @@ img {vertical-align: middle;}
 
 /*-----------------Tab Functionality-------------------*/
 
-#General {background-color: rgba(175, 186, 186, 0.24);}
-#Building {background-color: rgba(175, 186, 186, 0.24);}
-#Exterior {background-color: rgba(175, 186, 186, 0.24);}
+#PhoneTab {background-color: rgba(175, 186, 186, 0.24);}
+#EmailTab {background-color: rgba(175, 186, 186, 0.24);}
+#LinkedinTab {background-color: rgba(175, 186, 186, 0.24);}
 
 /* Style tab links */
 .tablink {

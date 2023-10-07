@@ -51,43 +51,41 @@
       Mon-Fri 9:00am - 6:00pm using the contact information below.
     </p>
 
-    <button class="tablink" onclick="openPage('General', this, 'red')" id="defaultOpen">Phone</button>
-    <button class="tablink" onclick="openPage('Building', this, 'green')" >Email</button>
-    <button class="tablink" onclick="openPage('Exterior', this, 'blue')">linkedin</button>
-    <div id="General" class="tabcontent">
-            <dl>
-            <dt><strong> +(1) 437 288 7188</strong></dt>
-            </dl>
+    <button class="tablink" onclick="openPage('PhoneTab', this, 'red')" id="defaultOpen">Phone</button>
+    <button class="tablink" onclick="openPage('EmailTab', this, 'green')">Email</button>
+    <button class="tablink" onclick="openPage('LinkedinTab', this, 'blue')">Linkedin</button>
+    <div id="PhoneTab" class="tabcontent">
+      <dl>
+        <dt><strong> +(1) 437 288 7188</strong></dt>
+      </dl>
     </div>
-
-    <div id="Building" class="tabcontent">
-             <dl>
-                <dt><strong>julio_cesar.rv@hotmail.com</strong></dt>
-            </dl>    
-        </div>
-
-        <div id="Exterior" class="tabcontent">
-            <dl>
-                <dt><strong>https://www.linkedin.com/in/julio-r-4a708599/</strong></dt>
-            </dl>    
-          </div>
+    <div id="EmailTab" class="tabcontent">
+      <dl>
+        <dt><strong>julio_cesar.rv@hotmail.com</strong></dt>
+      </dl>
+    </div>
+    <div id="LinkedinTab" class="tabcontent">
+      <dl>
+        <dt><strong>https://www.linkedin.com/in/julio-r-4a708599/</strong></dt>
+      </dl>
+    </div>
     <script>
       //Tab Functionality ---------------------------------------------------
-      function openPage(pageName,elmnt,color) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
           tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
       }
-      document.getElementById(pageName).style.display = "block";
-      }
-  
+
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
-      </script>
+    </script>
   </main>
 </div>
