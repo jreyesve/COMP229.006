@@ -1,16 +1,22 @@
+/*   File Name:    app.js
+  -  Student Name: Julio Reyes
+  -  Student Id:   301308609
+  -  Date:         October 7th, 2023 
+*/
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//Create the route pointing out to index.js file
 var indexRouter = require('../app/routes/index');
-var usersRouter = require('../app/routes/users');
-
 var app = express();
 
-// view engine setup
+//Set path for views
 app.set('views', path.join(__dirname, '../app/views'));
+
+// Set the view engine to ejs
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -19,9 +25,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
-//app.use('/', (req,res)=>{res.render('home', { title: 'HOME PAGE YUSS' })})
+//Entry point on URL using / symbol, then look for indexrouter path to redirect to
+//respectives web pages
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

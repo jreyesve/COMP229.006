@@ -19,8 +19,8 @@ router.get('/about', function(req, res, next) {
 router.get('/projects', function(req, res, next) {
   res.render('projects', {title: 'Projects',
                           project1: 'Movie Poster Dashboard',
-                          project2: 'Pizza Orders Application',
-                          project3: 'Web Site'});
+                          project2: 'Pizza Orders App',
+                          project3: 'Web Site (Express.js)'});
 });
 
 /* GET services page. */

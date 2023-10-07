@@ -1,3 +1,8 @@
+/*   File Name:    script.js
+  -  Student Name: Julio Reyes
+  -  Student Id:   301308609
+  -  Date:         October 7th, 2023 
+*/
 //Tab Functionality ----------BODY CONTACT PAGE----------------------
 function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;

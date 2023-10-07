@@ -1,3 +1,8 @@
+/*   File Name:    style.css
+  -  Student Name: Julio Reyes
+  -  Student Id:   301308609
+  -  Date:         October 7th, 2023 
+*/
 * {
     box-sizing: border-box;
 }
@@ -86,7 +91,7 @@ nav a:hover {
     transition: ease-out 2s color;
 }
 
-/*main ul {list-style-image: url(marker.gif)}*/
+/**/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -157,6 +162,7 @@ legend {
 
 }
 
+/*
 .Price_title {
     text-align: center;
     font-size: 30px;
@@ -172,13 +178,18 @@ legend {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+*/
+/*Projects and Services setting text*/
 .figure a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .figure a h5 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.figure h2 {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -245,31 +256,12 @@ footer p small {
     border-radius: 50%;
 }
 
-.feedbackImage {
-    padding-top: 30px;
-    border-radius: 50%;
-}
-
+/*Contact setting for text*/
 #contact {
     font-size: 90%;
 }
 
-/*
-table {
-    border: 2px solid #3399CC;
-    border-collapse: collapse;
-}
-td ,th {
-    padding: 0.5em;
-    border: 2px solid #3399CC;
-}
-td {
-    text-align: center;
-}
-.text {text-align: left;}
-tr:nth-of-type(odd) {background-color: #F5FAFC;}
-*/
-
+/*Setting for form CONTACT PAGE elements*/
 label {
     float: left;
     display: block;
@@ -293,6 +285,21 @@ input[type="submit"] {
     margin-left: 130px;
 }
 
+.button {
+    background-color: #505e92;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: whitesmoke;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Setting mobile and Desktop */
 #mobile {
     display: none;
 }
@@ -301,6 +308,7 @@ input[type="submit"] {
     display: inline;
 }
 
+/*Gallery Projects*/
 #gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
@@ -340,139 +348,7 @@ input[type="submit"] {
     transition: transform .5s linear, background-color 1s ease-in;
 }
 
-.button {
-    background-color: #505e92;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    text-decoration-color: whitesmoke;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-/*----------------START Slideshow Section---------------*/
-.mySlides {
-    display: none
-}
-
-img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    /*Move slideShow to center*/
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.prev {
-    left: 195px;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 195px;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/4 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 3.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
-/*----------------END Slideshow Section---------------*/
-
-/*-----------------Tab Functionality-------------------*/
+/*-----------------Tab Functionality CONTACT PAGE FORM-------------------*/
 
 #PhoneTab {
     background-color: rgba(175, 186, 186, 0.24);
@@ -511,51 +387,16 @@ img {
     height: 100%;
 }
 
-/*-----------------Tab Functionality-------------------*/
-
-/*---------------------Start CSS Table------------------*/
-/* DivTable.com */
-.divTable {
-    display: table;
-    width: 100%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.divTableRow {
-    display: table-row;
-}
-
-.divTableHeading {
-    background-color: white;
-    display: table-header-group;
-}
-
-.divTableCell,
-.divTableHead {
-    border: none;
-    display: table-cell;
-    padding: 3px 5px;
-    width: 25%;
-}
-
 dl dt {
     padding-top: 10px;
+    text-align: center;
 }
 
 dl dd {
     padding-bottom: 10px;
 }
+/*-----------------Tab Functionality-------------------*/
 
-.divTableBody {
-    display: table-row-group;
-}
-
-/*---------------END CSS Table---------------------------*/
-video {
-    float: right;
-    padding-left: 20px;
-}
 
 /*-------------------Special Adjustment DEVICES------------------------*/
 @media (max-width: 64em) {
@@ -617,14 +458,6 @@ video {
         display: none;
     }
 }
-
-/* @media (max-width: 37.5em) {
-    label{float: none; text-align: left;}
-    input[type="submit"]{
-        margin-left: 0px;
-    }
-} */
-
 
 @media (max-width: 37.5em) {
     #gallery {

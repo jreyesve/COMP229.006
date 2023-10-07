@@ -1,69 +1,82 @@
+<!-- File Name:    bodyContact.ejs
+  -  Student Name: Julio Reyes
+  -  Student Id:   301308609
+  -  Date:         October 7th, 2023 
+  -->
 <div id="wrapper">
   <div id="banner">
     <div id="banner_text"></div>
   </div>
   <header></header>
- 
+
   <!--Adding Nav-->
   <%- include('nav')%>
- 
-  <main>
-    <h2 class="text_page_title"><%= title %></h2>
-    <p>If you want to hear from me, please fill the form below with your contact information.</p>
 
-    <form method="post" action="mailto:c.34@hotmail.es?subject=IT Consulting firm - Contact" enctype="text/plain">
-      <fieldset>
-        <legend>Contact Information</legend>
-        <label class="top" for="First_Name">First Name</label>
-        <input class="top" type="text" id="First_Name" name="First_Name" size="35" required="required"
-          placeholder="Type your First Name here">
+    <main>
+      <h2 class="text_page_title">
+        <%= title %>
+      </h2>
 
-        <label class="top" for="Last_Name">Last Name</label>
-        <input class="top" type="text" id="Last_Name" name="Last_Name" size="35" required="required"
-          placeholder="Type your Last Name here">
-
-        <label class="top" for="Phone">Phone</label>
-        <input class="top" type="tel" id="Phone" name="Phone" size="35" required="required"
-          placeholder="Type your phone here">
-
-        <label class="top" for="Email">E-mail</label>
-        <input class="top" type="email" id="Email" name="Email" size="35" required="required"
-          placeholder="Type your E-mail here">
-
-        <label for="maxPriceSelected">Comments:</label><!--rows="5" cols="70"-->
-        <textarea class="other" id="Additional_Comments" name="Additional_Comments" required="required"
-          placeholder="Type your additional comments here"></textarea>
-      </fieldset>
       <br>
+      <p>As well, if you require especilized IT consulting services for your company, you can reach me on bussines hours
+        Mon-Fri 9:00am - 6:00pm using the contact information below.
+      </p>
 
-      <div class="contact_buttons">
-        <button type="reset" value="Reset" class="button">Reset</button>
-        <button type="submit" type="Submit" value="Submit" class="button">Submit</button>
+      <button class="tablink" onclick="openPage('PhoneTab', this, 'red')" id="defaultOpen">Phone</button>
+      <button class="tablink" onclick="openPage('EmailTab', this, 'green')">Email</button>
+      <button class="tablink" onclick="openPage('LinkedinTab', this, 'blue')">Linkedin</button>
+      <div id="PhoneTab" class="tabcontent">
+        <dl>
+          <dt><strong>
+              <%= phone %>
+            </strong></dt>
+        </dl>
       </div>
-    </form>
-    <br>
-    <p>As well, if you require especilized IT consulting services for your company, you can reach me on bussines hours
-      Mon-Fri 9:00am - 6:00pm using the contact information below.
-    </p>
+      <div id="EmailTab" class="tabcontent">
+        <dl>
+          <dt><strong>
+              <%= email %>
+            </strong></dt>
+        </dl>
+      </div>
+      <div id="LinkedinTab" class="tabcontent">
+        <dl>
+          <dt><strong><a href=<%=linkedin %>><%= linkedin %></a></strong></dt>
+        </dl>
+      </div>
+      <%- include('tab')%>
+        <br>
+        <p>If you want to hear from me, please fill the form below with your contact information.</p>
 
-    <button class="tablink" onclick="openPage('PhoneTab', this, 'red')" id="defaultOpen">Phone</button>
-    <button class="tablink" onclick="openPage('EmailTab', this, 'green')">Email</button>
-    <button class="tablink" onclick="openPage('LinkedinTab', this, 'blue')">Linkedin</button>
-    <div id="PhoneTab" class="tabcontent">
-      <dl>
-        <dt><strong><%= phone %></strong></dt>
-      </dl>
-    </div>
-    <div id="EmailTab" class="tabcontent">
-      <dl>
-        <dt><strong><%= email %></strong></dt>
-      </dl>
-    </div>
-    <div id="LinkedinTab" class="tabcontent">
-      <dl>
-        <dt><strong><a href=<%= linkedin %>><%= linkedin %></a></strong></dt>
-      </dl>
-    </div>
-         <%- include('tab')%>
-  </main>
+        <form method="post" action="mailto:c.34@hotmail.es?subject=IT Consulting firm - Contact" enctype="text/plain">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label class="top" for="First_Name">First Name</label>
+            <input class="top" type="text" id="First_Name" name="First_Name" size="35" required="required"
+              placeholder="Type your First Name here">
+
+            <label class="top" for="Last_Name">Last Name</label>
+            <input class="top" type="text" id="Last_Name" name="Last_Name" size="35" required="required"
+              placeholder="Type your Last Name here">
+
+            <label class="top" for="Phone">Phone</label>
+            <input class="top" type="tel" id="Phone" name="Phone" size="35" required="required"
+              placeholder="Type your phone here">
+
+            <label class="top" for="Email">E-mail</label>
+            <input class="top" type="email" id="Email" name="Email" size="35" required="required"
+              placeholder="Type your E-mail here">
+
+            <label for="Additional_Comments">Comments:</label>
+            <textarea class="other" id="Additional_Comments" name="Additional_Comments" required="required"
+              placeholder="Type your additional comments here"></textarea>
+          </fieldset>
+          <br>
+
+          <div class="contact_buttons">
+            <button type="reset" value="Reset" class="button">Reset</button>
+            <button type="submit" type="Submit" value="Submit" class="button">Submit</button>
+          </div>
+        </form>
+    </main>
 </div>
