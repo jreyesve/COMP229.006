@@ -3,18 +3,13 @@
     <div id="banner_text"></div>
   </div>
   <header></header>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/about">About Me</a></li>
-      <li><a href="/contact">Contact Me</a></li>
-    </ul>
-  </nav>
+ 
+  <!--Adding Nav-->
+  <%- include('nav')%>
+ 
   <main>
-    <h2 class="text_page_title">Home</h2>
-    <h2>Welcome</h2>
+    <h2 class="text_page_title"><%= title %></h2>
+    <h2><%= welcome %></h2>
     <p>We invite you to navigate through all especialized services we offer. Not matter how big or small is your
       company, we can help you to achieve
       your goals. We can partnership with big IT companies such as IBM, ORACLE, SAP, GOOGLE. We believe on the
@@ -26,7 +21,7 @@
       We adapt our innovations to create new standards of excellence in services in North America and Europa.
     </p>
 
-    <h2>Mission</h2>
+    <h2><%= mission %></h2>
     <p><span class="Mission">"Our mission is to help our clients make distinctive, lasting, and substantial
         improvements in their performance and to build a great firm that attracts, develops, excites, and retains
         exceptional people."

@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <%- include('partials/head')%>
-</head>
-
-<body class="container">
-
-  <header>
-    <%- include('partials/header')%>
-  </header>
-
-  <main>
-    <div class="jumbotron">
-      <h1>
-        <%= message %>
-      </h1>
-      <h2>
-        <%= error.status %>
-      </h2>
-      <pre><%= error.stack %></pre>
-    </div>
-  </main>
-
+<!-- File Name:    Services.ejs
+  -  Student Name: Julio Reyes
+  -  Student Id:   301308609
+  -  Date:         October 7th, 2023 
+  -->
+  <!DOCTYPE html>
+  <html lang="es">
+  
+  <head>
+    <%- include('partials/head')%>
+  </head>
+  
+  <body>
+    <%- include('partials/bodyError')%>
+  </body>
+  
   <footer>
     <%- include('partials/footer')%>
   </footer>
-
-</body>
-
-</html>
+  
+  </html>

@@ -1,0 +1,22 @@
+<header></header>
+
+<!--Adding Nav-->
+<%- include('nav')%>
+
+  <main>
+    <div id="wrapper">
+      <div id="banner">
+        <div id="banner_text"></div>
+      </div>
+      <div class="jumbotron">
+        <h1>
+          <%= message %>
+        </h1>
+        <h2>
+          <%= error.status %>
+        </h2>
+        <pre><%= error.stack %></pre>
+        <button onclick="location.href='/'" type="button" class="button"> Back to Home</button>
+      </div>
+  </main>
+  </div>
