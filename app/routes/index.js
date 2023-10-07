@@ -23,7 +23,10 @@ router.get('/services', function(req, res, next) {
 
 /* GET contact me page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', {title: 'Contact me'});
+  res.render('contact', {title: 'Contact me',
+                        phone: '+(1) 437 288 7188',
+                        email: 'julio_cesar.rv@hotmail.com',
+                        linkedin: 'https://www.linkedin.com/in/julio-r-4a708599/'});
 });
 
 module.exports = router;

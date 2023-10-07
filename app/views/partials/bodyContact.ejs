@@ -56,36 +56,19 @@
     <button class="tablink" onclick="openPage('LinkedinTab', this, 'blue')">Linkedin</button>
     <div id="PhoneTab" class="tabcontent">
       <dl>
-        <dt><strong> +(1) 437 288 7188</strong></dt>
+        <dt><strong><%= phone %></strong></dt>
       </dl>
     </div>
     <div id="EmailTab" class="tabcontent">
       <dl>
-        <dt><strong>julio_cesar.rv@hotmail.com</strong></dt>
+        <dt><strong><%= email %></strong></dt>
       </dl>
     </div>
     <div id="LinkedinTab" class="tabcontent">
       <dl>
-        <dt><strong>https://www.linkedin.com/in/julio-r-4a708599/</strong></dt>
+        <dt><strong><a href=<%= linkedin %>><%= linkedin %></a></strong></dt>
       </dl>
     </div>
-    <script>
-      //Tab Functionality ---------------------------------------------------
-      function openPage(pageName, elmnt, color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(pageName).style.display = "block";
-      }
-
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-    </script>
+         <%- include('tab')%>
   </main>
 </div>
