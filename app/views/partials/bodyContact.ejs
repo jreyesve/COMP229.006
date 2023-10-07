@@ -1,0 +1,131 @@
+<!--<div id="banner">
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/services">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">Contact Me</a>
+    </li>
+  </ul>
+</nav>
+-->
+<div id="wrapper">
+  <div id="banner">
+      <div id="banner_text"></div>
+   </div>
+  <header></header>
+<nav>
+  <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/contact">Contact Me</a></li>
+  </ul>
+</nav>
+<main>
+  <h2 class="text_page_title">Contact Us</h2>
+      <p>If you have any questions regardless to listing properties, please contact us filling the below form.</p>
+
+      <form method="post" action="mailto:c.34@hotmail.es?subject=Real_State_Co"  enctype="text/plain" >
+          <fieldset>
+              <legend>Personal Information</legend>
+              <label class="top" for="First_Name">First Name</label>
+              <input class="top" type="text" id="First_Name" name="First_Name" size="35" required="required" placeholder="Type your First Name here">
+              
+              <label class="top" for="Last_Name">Last Name</label>
+              <input class="top" type="text" id="Last_Name" name="Last_Name" size="35" required="required" placeholder="Type your Last Name here">
+
+              <label class="top" for="Phone">Phone</label>
+              <input class="top" type="tel" id="Phone" name="Phone" size="35" required="required" placeholder="Type your phone here">
+              
+              <label class="top" for="Email">E-mail</label>
+              <input class="top" type="email" id="Email" name="Email" size="35" required="required" placeholder="Type your E-mail here">
+          </fieldset>
+          
+          <br>
+          <fieldset>
+              <legend>Property Details</legend>
+              <div > <!--class="some-class"--> 
+                  <label for="BuildingType">Building Type</label>
+                  <input type="text" name="BuildingType" id="BuildingType" list="Types" size="35" placeholder="Select one option">
+                  <datalist id="Types">
+                      <option>Any</option>
+                      <option>House</option>
+                      <option>Row / TownHouse</option>
+                      <option>Apartment</option>
+                      <option>Duplex</option>
+                      <option>Triplex</option>
+                      <option>Fourplex</option>
+                      <option>Garden Home</option>
+                      <option>Mobile Home</option>
+                      <option>Manufactured Home</option>
+                      <option>Float Home</option>
+                      <option>Residential Commercial Home</option>
+                      <option>Two Apartment House</option>
+                  </datalist>
+
+                  <label for="Bedrooms">Beds</label>
+                  <input type="text" name="Bedrooms" id="Bedrooms" list="NoBedrooms" size="35" placeholder="Select one option">
+                  <datalist id="NoBedrooms">
+                      <option>Any</option>
+                      <option>1</option>
+                      <option>1+</option>
+                      <option>2</option>
+                      <option>2+</option>
+                      <option>3</option>
+                      <option>3+</option>
+                      <option>4</option>
+                      <option>4+</option>
+                      <option>5</option>
+                      <option>5+</option>
+                  </datalist>
+
+                  <label for="Bathrooms">Baths</label>
+                  <input type="text" name="Bathrooms" id="Bathrooms" list="NoBathrooms" size="35" placeholder="Select one option">
+                  <datalist id="NoBathrooms">
+                      <option>Any</option>
+                      <option>1</option>
+                      <option>1+</option>
+                      <option>2</option>
+                      <option>2+</option>
+                      <option>3</option>
+                      <option>3+</option>
+                      <option>4</option>
+                      <option>4+</option>
+                      <option>5</option>
+                      <option>5+</option>
+                  </datalist>
+                  
+                  <label for="PriceRange">Price Range</label>
+                  <input type="range" for="PriceRange" min="0" max="10000000" value="5000000" id="myRange">
+                  <label for="maxPriceSelected">&nbsp;</label>
+                  <p>Price $: 0 to <span id="maxPriceSelected"></span></p>
+
+                  <label for="maxPriceSelected">Comments:</label><!--rows="5" cols="70"-->
+                  <textarea class="other" id="Additional_Comments" name="Additional_Comments"  required="required" placeholder="Type your additional comments here"></textarea>
+              </div>
+          </fieldset>
+          <br>
+          
+          <div>
+              <button type="reset" value="Reset" >Reset</button>
+              <button type="submit" type="Submit" value="Submit">Submit</button>
+          </div>
+      </form>       
+   
+      <!--Footer here-->
+</main>
+</div>
+

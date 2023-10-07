@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <%- include('partials/head')%>
-  <img src="/images/image_logo.JPG" alt="logo" style="width:40px;">
 </head>
+
 <body class="container">
 
-<header>
-  <%- include('partials/header')%>
-</header>
+  <header>
+    <%- include('partials/header')%>
+  </header>
 
-<main>
-  <div class="jumbotron">
-    <h1><%= message %></h1>
-    <h2><%= error.status %></h2>
-    <pre><%= error.stack %></pre>
-  </div>
-</main>
+  <main>
+    <div class="jumbotron">
+      <h1>
+        <%= message %>
+      </h1>
+      <h2>
+        <%= error.status %>
+      </h2>
+      <pre><%= error.stack %></pre>
+    </div>
+  </main>
 
-<footer>
-  <%- include('partials/footer')%>
-</footer>
+  <footer>
+    <%- include('partials/footer')%>
+  </footer>
 
 </body>
+
 </html>
